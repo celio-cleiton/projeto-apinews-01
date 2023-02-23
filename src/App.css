@@ -1,0 +1,48 @@
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.article img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.article-text {
+  flex-grow: 1;
+}
+
+.article-text h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .article {
+    flex-direction: column;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+}
